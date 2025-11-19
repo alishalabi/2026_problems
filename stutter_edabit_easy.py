@@ -10,8 +10,8 @@ stutter("outstanding") ➞ "ou... ou... outstanding?"
 """
 
 def stutter(my_word):
-    first_two = my_word[0:2]
-    ret = f"{first_two}...{first_two}...{my_word}?"
+    prefix = my_word[0:2]
+    ret = f"{prefix}...{prefix}...{my_word}?"
     return ret
 
 print(stutter("incredible"))
