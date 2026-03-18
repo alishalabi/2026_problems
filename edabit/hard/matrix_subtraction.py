@@ -22,7 +22,7 @@ subtract_matrix([
 """
 
 def subtract_matrix(matrix1, matrix2):
-    ret = [0 for _ in range(len(matrix1)) for _ in range(len(matrix1[0]))] # generate empty array - help from internet
+    ret = [[0 for _ in range(len(matrix1))] for _ in range(len(matrix1[0]))] # generate empty array - help from internet
     for row in range(len(matrix1)):
         for column in range(len(matrix1[row])):
             ret[row][column] = matrix1[row][column] - matrix2[row][column]
