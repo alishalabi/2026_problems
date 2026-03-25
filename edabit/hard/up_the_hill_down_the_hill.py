@@ -12,7 +12,7 @@ ave_spd(30, 8, 24) ➞ 12
 """
 
 def ave_spd(up_time, up_rate, down_rate):
-    distance = (up_time) * up_rate
+    distance = up_time * up_rate
     down_time = distance / down_rate
     ret = (distance * 2) / (up_time + down_time)
     return ret
