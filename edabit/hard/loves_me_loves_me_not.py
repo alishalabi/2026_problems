@@ -15,19 +15,19 @@ def loves_me(num):
     phrase1 = "Loves me"
     phrase2 = "Loves me not"
     ret = ""
-    counter = 1
+    counter = 0
 
     # Special case: length == 1 -> no commas
     if num == 1:
         return phrase1.upper()
 
-    while counter < (num):
-        if counter // 2 == 0:
+    while counter < (num - 1):
+        if counter % 2 == 0:
             ret += phrase1 + ", "
         else:
             ret += phrase2 + ", "
         counter += 1
-    if counter // 2 == 1:
+    if counter % 2 == 0:
         ret += phrase1.upper()
     else:
         ret += phrase2.upper()
